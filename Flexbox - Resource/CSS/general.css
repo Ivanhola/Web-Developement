@@ -1,0 +1,74 @@
+
+/*for visibility around the div boxes*/
+.flexbox-container div, .flexbox-container2 div{
+  border: 1px black solid;
+  padding: 15px;
+}
+
+.box1{
+  /*the size of the box*/
+  flex:2;
+  /*You can assign the order of our column using the order: operator*/
+  order: 2;
+
+}
+
+.box2{
+  flex:1;
+  order:3;
+
+}
+
+.box3{
+  flex:1;
+  order: 1;
+}
+
+.container2-box{
+  /*change this to see how much space is between/wide our box is*/
+  width: 25%;
+
+
+}
+  /*  Somewhat mobile responsive, add a media query  */
+@media(min-width: 800px){
+  /*our main container*/
+  .flexbox-container{
+    /*Our way of making a flex box*/
+    display: flex;
+    /*if we want to change the height to fix each box to fit the text
+    rather than the default same height for all//
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    */
+
+    /*If we want to choose the direction of our flexbox items
+    (Horizontal/Vertical, Use flex-direction)
+    flex-direction: column;
+    flex-direction: row; //default direction
+    */
+
+
+
+  }
+
+  .flexbox-container2{
+  display: flex;
+  /*Default justifycontent
+  justify-content: flex-start;
+
+
+  justify-content: flex-end;
+  justify-content: flex-center;
+
+
+  */
+  /*if we want margins in the middle, to space our items*/
+  justify-content: space-between;
+  /*if an item gets too 'squeezed' in with another element,
+  it will push it down(like float right/left)
+  flex-wrap: wrap;
+  */
+  }
+}
