@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS-Grid Resource - Ivan Llamas</title>
+    <style>
+
+    .grid-container{
+      display: grid;
+
+      /*overflow: hidden;*/
+      /*Define the width of our columns ( also how many columns 2 in this case)*/
+      grid-template-columns: 70% 30%;
+      /*adding a margin for rows/columns*/
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+    }
+
+    /*All the divs in the grid container*/
+    .grid-container > div{
+      background: grey;
+      padding: 1em;
+    }
+    /*every other element has another color*/
+    .grid-container > div:nth-child(odd){
+      background: lightgrey;
+    }
+    </style>
+  </head>
+
+
+  <body>
+    <!-- Wrapper Grid -->
+    <div class="grid-container">
+
+
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam ea, officiis,
+        quia neque in quasi quas atque corporis, iste ut dolore. Fugiat facere, est id in dolores
+        porro voluptas unde commodi quod, dignissimos temporibus odit corporis numquam repellendus a, et
+        debitis doloribus deleniti odio incidunt? Voluptate sequi odit eaque.
+      </div>
+
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos earum corporis, laudantium deserunt nobis,
+          placeat voluptas non sequi sunt perferendis omnis officia impedit maxime cumque dignissimos voluptate facilis
+          perspiciatis neque.
+        </div>
+
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ullam ea, officiis,
+          quia neque in quasi quas atque corporis, iste ut dolore. Fugiat facere, est id in dolores
+          porro voluptas unde commodi quod, dignissimos temporibus odit corporis numquam repellendus a, et
+          debitis doloribus deleniti odio incidunt? Voluptate sequi odit eaque.
+        </div>
+
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos earum corporis, laudantium deserunt nobis,
+            placeat voluptas non sequi sunt perferendis omnis officia impedit maxime cumque dignissimos voluptate facilis
+            perspiciatis neque.
+          </div>
+
+
+    </div>
+
+  </body>
+</html>
